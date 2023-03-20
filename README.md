@@ -1,6 +1,6 @@
 # Modelling and Simulation in Python
 
-This Python repo offers code examples, algorithms, and tools for modeling and simulation, spanning across science, computing, and engineering. It's an excellent resource for applying computational methods and welcomes community contributions. Check out the link for more information: https://siliconwit.com/modelling-and-simulation-in-python/
+This Python repo offers code examples, algorithms, and tools for modeling and simulation, spanning across science, computing, and engineering. It's an excellent resource for applying computational methods and welcomes community contributions. Check out https://siliconwit.com/modelling-and-simulation-in-python/ for animations and more information.
 
 ## Simulating a Swinging Pendulum 
 
@@ -15,6 +15,7 @@ The simulation of a swinging pendulum can be improved and extended in various wa
 - *Nonlinear damping:* Adding nonlinear damping terms to the equations of motion could provide a more realistic simulation of pendulum dynamics.
 
 - *Multiple pendulums:* Simulating multiple interacting pendulums could provide insights into the complex dynamics and control strategies of mechatronic systems.
+One such improvement is double pendulum ([2pendulum.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/b6e01c55b3f091e0daaf45a5ed872eef7ae03d30/2pendulum.py)), explained in [double pendulum simulation tutorial](https://siliconwit.com/modelling-and-simulation-in-python/double-pendulum-simulation). 
 
 - *User input:* Allowing users to adjust parameters or initial conditions of the pendulum could make the simulation more interactive and useful for educational or design purposes.
 
