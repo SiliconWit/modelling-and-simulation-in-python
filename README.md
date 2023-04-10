@@ -34,3 +34,31 @@ In addition, several visual improvements could enhance the simulation, such as:
 - *3D visualization:* Transforming the 2D simulation into a 3D visualization could provide a more realistic representation of the pendulum's motion, and allow for more dynamic camera angles and perspectives.
 
 Furthermore, Blender could be a powerful tool for improving the visual display of the simulation. Blender allows for the creation of realistic materials and textures, advanced lighting controls, particle effects, camera movements, and physics simulations, all of which could enhance the simulation's visual quality and realism.
+
+## Lightning Strike/Bolt Simulation
+
+The lightning strike code [lightning-strike.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/3d373b0a82b69344c5599e379ca1a6fc4c3fa428/lightning-strike/lightning-strike.py) contains a Python-based lightning strike/bolt simulation, which is a part of the [Natural Phenomena Simulations](https://github.com/SiliconWit/modelling-and-simulation-in-python) project. The simulation showcases the fractal nature of lightning and demonstrates how to generate and visualize realistic lightning patterns using Python.
+
+For a detailed tutorial and a comprehensive explainer article, please visit [Lightning Strike/Bolt Simulation](https://siliconwit.com/modelling-and-simulation-in-python/lightning-strike) on the [SiliconWit](https://siliconwit.com/modelling-and-simulation-in-python/) website.
+
+### Features
+
+- Fractal-based lightning bolt generation
+- 2D visualization using Matplotlib
+- Animation using FuncAnimation
+
+### Usage
+
+1. Clone the repository.
+2. Install the required packages: `numpy` and `matplotlib`.
+3. Run the `lightning-strike.py` script.
+
+Feel free to explore the code, modify it, and learn more about lightning simulation and other natural phenomena simulations in Python.
+
+### Possible Improvements
+
+- Incorporate 3D visualization using libraries like Mayavi or Plotly
+- Simulate different types of lightning (cloud-to-ground, cloud-to-cloud, intra-cloud)
+- Add atmospheric conditions (humidity, temperature, pressure) to the simulation
+- Enhance the simulation by including thunder and electromagnetic effects
+
