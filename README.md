@@ -2,22 +2,25 @@
 
 This Python repo offers code examples, algorithms, and tools for modeling and simulation, spanning across science, computing, and engineering. It's an excellent resource for applying computational methods and welcomes community contributions. Check out https://siliconwit.com/modelling-and-simulation-in-python/ for animations and more information.
 
-## Simulating a Swinging Pendulum 
+## Simulating a Swinging Pendulum
 
-The code [1pendulum.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/549245c9e15114b6d5e3082dbb27cf13a1acc55a/1pendulum.py) simulates the motion of a swinging pendulum using numerical integration, based on the principles of Newtonian mechanics. The code defines the initial parameters of the pendulum, including its mass, length, initial angle, and velocity. The loop iterates over a range of time steps, calculating the position and velocity of the pendulum at each step. The plot displays the pendulum's motion using matplotlib, with a red circle representing the bob and a gray line indicating the rod. The simulation could be improved by using higher-order integration schemes, adding nonlinear damping terms, simulating multiple pendulums, and allowing user input. The code is useful for mechatronics engineers, who can use it to design and optimize control systems, simulate the motion of robotic arms, test and calibrate sensors, and harvest energy from mechanical systems. The code is based on a tutorial by Silicon Wit, which can be found at https://siliconwit.com/modelling-and-simulation-in-python/simulating-a-swinging-pendulum.
+The code [1pendulum.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/549245c9e15114b6d5e3082dbb27cf13a1acc55a/1pendulum.py) simulates the motion of a swinging pendulum using numerical integration based on Euler's method, and the principles of Newtonian mechanics. The code defines the initial parameters of the pendulum, including its mass, length, initial angle, and velocity. The loop iterates over a range of time steps, calculating the position and velocity of the pendulum at each step. The plot displays the pendulum's motion using matplotlib, with a red circle representing the bob and a gray line indicating the rod.
+
+An improved version of the simulation, [1pendulum-rk4.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/14d2b35a8c8c96401a00fc3883516efabff304ba/pendulum/1pendulum-rk4.py), implements the RK-4 method for more accurate numerical integration. This allows for better approximations of the pendulum's motion, especially for longer simulations or larger time steps. Additionally, the improved code allows for easy adjustment of the simulation length by changing the value of `num_steps`.
+
+The code is useful for mechatronics engineers, who can use it to design and optimize control systems, simulate the motion of robotic arms, test and calibrate sensors, and harvest energy from mechanical systems. The code is based on a tutorial by Silicon Wit, which can be found at https://siliconwit.com/modelling-and-simulation-in-python/simulating-a-swinging-pendulum.
 
 ### Potential Improvements to a Swinging Pendulum Simulation
 
 The simulation of a swinging pendulum can be improved and extended in various ways, including:
 
-- *Higher-order integration:* Using a higher-order integration scheme, such as the Runge-Kutta method, could improve the accuracy and stability of the simulation.
+- *Higher-order integration:* The [1pendulum-rk4.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/14d2b35a8c8c96401a00fc3883516efabff304ba/pendulum/1pendulum-rk4.py) version of the simulation implements the Runge-Kutta method, which improves the accuracy and stability of the simulation.
 
 - *Nonlinear damping:* Adding nonlinear damping terms to the equations of motion could provide a more realistic simulation of pendulum dynamics.
 
-- *Multiple pendulums:* Simulating multiple interacting pendulums could provide insights into the complex dynamics and control strategies of mechatronic systems.
-One such improvement is double pendulum ([2pendulum.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/b6e01c55b3f091e0daaf45a5ed872eef7ae03d30/2pendulum.py)), explained in [double pendulum simulation tutorial](https://siliconwit.com/modelling-and-simulation-in-python/double-pendulum-simulation). 
+- *Multiple pendulums:* Simulating multiple interacting pendulums could provide insights into the complex dynamics and control strategies of mechatronic systems. One such improvement is the double pendulum ([2pendulum.py](https://github.com/SiliconWit/modelling-and-simulation-in-python/blob/b6e01c55b3f091e0daaf45a5ed872eef7ae03d30/2pendulum.py)), explained in the [double pendulum simulation tutorial](https://siliconwit.com/modelling-and-simulation-in-python/double-pendulum-simulation).
 
-- *User input:* Allowing users to adjust parameters or initial conditions of the pendulum could make the simulation more interactive and useful for educational or design purposes.
+- *User input:* Allowing users to input their own parameters, such as mass, length, and initial angle, would make the simulation more versatile and customizable.
 
 In addition, several visual improvements could enhance the simulation, such as:
 
